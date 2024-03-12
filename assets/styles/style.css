@@ -284,6 +284,11 @@ swiper-slide img {
 
 /* CATEGORIES */
 
+.hero-ritual {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .hero-categories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
