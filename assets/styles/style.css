@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: "Roboto Slab", serif;
+    height: 100%;
     margin: auto;
     /* font-family: "Montserrat", serif; */
 }
@@ -56,7 +57,17 @@ a {
 }
 
 .container {
-    padding: 20px 150px;
+    padding: 20px 170px;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
 }
 
 
@@ -313,15 +324,16 @@ swiper-slide img {
 }
 
 button {
-    width: 200px;
+    width: 150px;
     color: #fff;
     background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 30px;
+    height: 45px;
     transition: all 0.5s;
 }
 
@@ -587,4 +599,103 @@ button:hover {
     .footer-socials {
         margin: auto;
     }
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+/* PRODUCTS */
+
+.products-columns {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 190px 1fr;
+    margin: auto;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .products-columns {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+}
+
+
+.products-title {
+    font-size: 64px;
+    font-weight: 900px;
+    text-align: center;
+    margin: 20px 0px;
+    margin-bottom: 50px;
+}
+
+.section-link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .section-link {
+        display: none;
+    }
+}
+
+.section-title {
+    text-align: center;
+}
+
+.products-section {
+    display: grid;
+    row-gap: 45px;
+    height: fit-content;
+}
+
+.section-title{
+    font-weight: 600;
+    font-family: "Montserrat", serif;
+}
+
+.products-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 45px;
+}
+
+@media screen and (max-width: 1024px) {
+    .products-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.product-item {
+    display: grid;
+    max-width: fit-content;
+    text-align: center;
+    align-items: center;
+    height:  fit-content;
+}
+
+@media screen and (max-width: 1024px) {
+    .product-img {
+        width: 60vw;
+    } 
+}
+
+.product-title{
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.product-price {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.product-btn {
+    margin: auto;
+    margin-top: 20px;
 }
