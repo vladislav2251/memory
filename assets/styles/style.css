@@ -187,8 +187,6 @@ a {
     padding: 30px 10px 10px 10px;
 }
 
-
-
 .header-search {
     width: 100%;
     justify-content: center;
@@ -295,6 +293,58 @@ swiper-slide img {
 
 /* CATEGORIES */
 
+/* v2 */
+
+.category-card {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+.card {
+    padding: 20px 40px;
+    border: solid #00000017;
+    max-width: 250px;
+    display: grid;
+    transition: all 0.5s;
+    gap: 20px;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card:hover {
+    border: solid #000000b4;
+}
+
+.card-label {
+    display: grid;
+    gap: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Montserrat", serif;
+}
+
+.card-description {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Montserrat", serif;
+    color: dimgray;
+}
+
+.card-btn {
+    width: 100%;
+}
+
+
+/* v1 */
 .hero-ritual {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -355,6 +405,7 @@ button:hover {
 .hero-info {
     background: #F9E495;
     margin-top: 100px;
+    padding:60px 170px 150px 170px;
 }
 
 @media screen and (max-width: 768px) {
@@ -395,6 +446,7 @@ button:hover {
     font-size: 21px;
     font-weight: 400;
     margin: auto;
+    line-height:30px;
     text-align: center;
 }
 
@@ -406,11 +458,11 @@ button:hover {
 
 
 .hero-features {
-    align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     margin: auto;
+    align-items: center;
     margin-top: 100px;
 }
 
@@ -423,8 +475,7 @@ button:hover {
 }
 
 .feature {
-    max-width: 280px;
-    height: 100%;
+    width: 350px;
     display: grid;
     gap: 20px;
 }
@@ -443,9 +494,9 @@ button:hover {
 
 
 .feature-description {
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 300;
-    
+    line-height:30px;
 }
 
 .container-angel{
@@ -454,7 +505,7 @@ button:hover {
 
 .feature-angel {
     position: absolute;
-    top: -270px;
+    top: -290px;
     left: -330px;
     height: auto;
 }
@@ -473,6 +524,7 @@ button:hover {
 
 .about {
     margin: auto;
+    padding: 50px 170px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -490,7 +542,7 @@ button:hover {
 @media screen and (max-width: 1024px) {
     .about-image {
         width: 90vw;
-
+        float: none;
     }
 }
 
@@ -500,11 +552,13 @@ button:hover {
 }
 
 .about-description {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 25px;
+    line-height:40px;
 }
+
 
 .about-title {
     font-size: 20px;
@@ -519,9 +573,9 @@ button:hover {
     background: #F9E495;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    place-items: center;
     margin: auto;
-    align-items: center;
+    height: fit-content;
+    padding: 50px 170px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -534,7 +588,7 @@ button:hover {
 
 .footer-contacts {
     display: grid;
-    gap: 20px;
+    gap: 40px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -546,24 +600,24 @@ button:hover {
 
 .contacts-label {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .contacts-location {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 800;
+    line-height:40px;
 }
 
 .contacts-phoner {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 800;
     display: grid;
-    gap: 10px;
+    gap: 15px;
 }
 
 .footer-links {
     display: grid;
-    gap: 15px;
     text-align: center;
     font-weight: 300;
 }
@@ -575,7 +629,6 @@ button:hover {
 
 .footer-info {
     display: grid;
-    gap: 20px;
     text-align: end;
 }
 
@@ -587,7 +640,7 @@ button:hover {
 
 .footer-schedule{
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .schedule-description {
