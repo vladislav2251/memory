@@ -311,6 +311,7 @@ swiper-slide img {
     margin: auto;
     margin-top: 50px;
     cursor: pointer;
+    row-gap: 40px;
 }
 
 @media screen and (max-width: 1024px) {
